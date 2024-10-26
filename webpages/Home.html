@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHARISH</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* For auto-rotating image slider */
+        .slider {
+            animation: slide 32s infinite;
+        }
+
+        @keyframes slide {
+
+            0%,
+            25% {
+                transform: translateX(0);
+            }
+
+            26%,
+            50% {
+                transform: translateX(-100%);
+            }
+
+            51%,
+            75% {
+                transform: translateX(-200%);
+            }
+
+            76%,
+            100% {
+                transform: translateX(-300%);
+            }
+        }
+
+        /* Smooth scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <span class="text-white text-xl font-bold">CHARISH</span>
+            <ul class="flex space-x-4 text-white">
+                <li><a href="#home" class="hover:text-green-500">Home</a></li>
+                <li><a href="#introduction" class="hover:text-green-500">Introduction</a></li>
+                <li><a href="#scope" class="hover:text-green-500">Scope</a></li>
+                <li><a href="#milestones" class="hover:text-green-500">Milestones</a></li>
+                <li><a href="#outcome" class="hover:text-green-500">Outcome</a></li>
+                <li><a href="#technologies" class="hover:text-green-500">Technologies</a></li>
+                <li><a href="#team" class="hover:text-green-500">Our Team</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="h-screen flex items-center justify-center bg-gray-200 relative overflow-hidden">
+        <div class="relative w-full h-full">
+            <!-- Background Image -->
+            <img src="../asets/homw.jpg" alt="Background Image" class="w-full h-full object-cover">
+
+            <!-- Overlay and Text -->
+            <div
+                class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-0 hover:bg-opacity-60 transition duration-300 opacity-0 hover:opacity-100">
+                <h1 class="text-4xl font-bold text-white">Welcome to CHARISH</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section with Sliding Cards -->
+    <section id="introduction" class="py-16 bg-blue-100">
+        <div class="container mx-auto">
+            <!-- Enhanced Introduction Heading with Black Text -->
+            <h2 class="text-4xl font-bold text-center text-black mb-12">
+                <span class="relative inline-block">
+                    <span class="absolute inset-0 transform -skew-y-3 bg-blue-200 opacity-70 rounded-lg"></span>
+                    <span class="relative">Introduction</span>
+                </span>
+            </h2>
+
+            <!-- Card Container with Hover Animation and Darker Background -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
+                <!-- Card Template (Repeat for each card) -->
+                <div
+                    class="bg-gray-800 p-6 rounded-lg shadow-lg text-center transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                    <h3 class="text-2xl font-bold text-white mb-2">Therapeutic Progress Tracker</h3>
+                    <p class="text-gray-300">Easily schedule and hold sessions with your therapist. During each session,
+                        tasks and medications discussed are recorded, creating a to-do list and medication guide. Next
+                        sessions are automatically scheduled and added to your calendar.</p>
+                </div>
+
+                <div
+                    class="bg-gray-800 p-6 rounded-lg shadow-lg text-center transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                    <h3 class="text-2xl font-bold text-white mb-2">Creative Wellness Hub</h3>
+                    <p class="text-gray-300">Share experiences and connect with others in a supportive community. Update
+                        your doctor with daily notes, which the app can turn into posts. Edit or delete posts before
+                        sharing, and engage with others’ stories through comments and shared insights.</p>
+                </div>
+
+                <div
+                    class="bg-gray-800 p-6 rounded-lg shadow-lg text-center transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                    <h3 class="text-2xl font-bold text-white mb-2">Wellness Evaluation Hub</h3>
+                    <p class="text-gray-300">Using the Yale-Brown OCD Scale, this feature evaluates users stress-free,
+                        providing a detailed report for doctors. Patients can view results, offering both a
+                        self-assessment tool and a professional insight aid.</p>
+                </div>
+
+                <div
+                    class="bg-gray-800 p-6 rounded-lg shadow-lg text-center transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                    <h3 class="text-2xl font-bold text-white mb-2">Urges & Fears Management</h3>
+                    <p class="text-gray-300">Chat with our AI to address urges and fears. The system identifies patterns
+                        and provides a report to the doctor, with tailored reminders and prompts to help reduce symptoms
+                        over time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Scope Section with 4 Static Cards -->
+    <section id="scope" class="py-16 bg-blue-100">
+        <div class="container mx-auto">
+            <!-- Enhanced Scope Heading with Black Text -->
+            <h2 class="text-4xl font-bold text-center text-black mb-12">
+                <span class="relative inline-block">
+                    <span class="absolute inset-0 transform -skew-y-3 bg-blue-200 opacity-70 rounded-lg"></span>
+                    <span class="relative">Scope</span>
+                </span>
+            </h2>
+
+            <!-- Card Container with Hover Animation and Darker Background -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 px-4">
+                <!-- Research Gap -->
+                <div
+                    class="bg-gray-800 p-6 rounded-lg shadow-lg text-center transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                    <h3 class="text-2xl font-bold text-white mb-2">Research Gap</h3>
+                    <p class="text-gray-300">
+                        Current mobile applications for OCD management often lack features like personalized medication
+                        reminders, automated task monitoring, and comprehensive community support. Many existing
+                        solutions do not allow integrated features like task tracking and detailed medication reporting,
+                        highlighting the need for a more holistic approach.
+                    </p>
+                </div>
+
+                <!-- Research Problem -->
+                <div
+                    class="bg-gray-800 p-6 rounded-lg shadow-lg text-center transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                    <h3 class="text-2xl font-bold text-white mb-2">Research Problem</h3>
+                    <p class="text-gray-300">
+                        OCD patients in Sri Lanka face challenges in accessing specialized mental health services,
+                        leading to delayed treatment and limited support. The absence of integrated support systems for
+                        task tracking and symptom management further exacerbates these issues, affecting the quality of
+                        life of individuals with OCD.
+                    </p>
+                </div>
+
+                <!-- Research Objectives -->
+                <div
+                    class="bg-gray-800 p-6 rounded-lg shadow-lg text-center transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                    <h3 class="text-2xl font-bold text-white mb-2">Research Objectives</h3>
+                    <p class="text-gray-300">
+                        This study aims to develop a comprehensive mobile application that provides therapeutic support
+                        for OCD patients, incorporating features like real-time task extraction, personalized medication
+                        reminders, and an interactive platform for symptom monitoring. The objective is to create a more
+                        accessible and effective support system.
+                    </p>
+                </div>
+
+                <!-- Background -->
+                <div
+                    class="bg-gray-800 p-6 rounded-lg shadow-lg text-center transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                    <h3 class="text-2xl font-bold text-white mb-2">Background</h3>
+                    <p class="text-gray-300">
+                        Obsessive-Compulsive Disorder (OCD) is a chronic mental health disorder with intrusive thoughts
+                        and repetitive behaviors. In Sri Lanka, many individuals with OCD avoid seeking help due to
+                        limited access to specialized services. Mobile health applications have shown potential in
+                        bridging this gap by providing therapeutic support.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Milestones Section with Download Links -->
+    <section id="milestones" class="py-16 bg-blue-100">
+        <div class="container mx-auto">
+            <!-- Enhanced Milestones Heading with Black Text -->
+            <h2 class="text-4xl font-bold text-center text-black mb-12">
+                <span class="relative inline-block">
+                    <span class="absolute inset-0 transform -skew-y-3 bg-blue-200 opacity-70 rounded-lg"></span>
+                    <span class="relative">Milestone & Documents</span>
+                </span>
+            </h2>
+
+            <!-- Card Container with 3 Columns on Large Screens -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
+                <!-- Milestone Cards with Download Links -->
+                <div
+                    class="bg-gray-800 p-6 rounded-lg shadow-lg text-left transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                    <h3 class="text-lg font-bold text-green-400 mb-2">01. Project Proposal</h3>
+                    <p class="text-gray-300 mb-4">A Project Proposal is presented to potential sponsors or clients to
+                        receive funding or get your project approved.</p>
+                    <p class="text-gray-400 mb-4">February 21</p>
+                    <div class="flex space-x-2">
+                        <a href="https://drive.google.com/drive/folders/1buPP-HTqmvtUxxVOMhViuuu2qiZqrVUO?usp=sharing"
+                            class="bg-green-500 text-white px-4 py-2 rounded" target="_blank">Individual Reports</a>
+                        <a href="https://drive.google.com/drive/folders/1-BAijw5jpyIUrHoqDWow_Ao0KhEPCrtT?usp=sharing"
+                            class="bg-green-500 text-white px-4 py-2 rounded" target="_blank">Presentation</a>
+                    </div>
+                </div>
+
+
+                <div
+                    class="bg-gray-800 p-6 rounded-lg shadow-lg text-left transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                    <h3 class="text-lg font-bold text-green-400 mb-2">02. Progress Presentation I</h3>
+                    <p class="text-gray-300 mb-4">Reviews the 50% completion status of the project, revealing any gaps
+                        or inconsistencies in the design/requirements.</p>
+                    <p class="text-gray-400 mb-4">May 06</p>
+                    <a href="https://drive.google.com/drive/folders/1q_s22wtbmcGw2UCOPXeud0Hr76dgwC1U?usp=sharing"
+                        class="bg-green-500 text-white px-4 py-2 rounded" target="_blank">Download</a>
+                </div>
+
+                <div
+                    class="bg-gray-800 p-6 rounded-lg shadow-lg text-left transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                    <h3 class="text-lg font-bold text-green-400 mb-2">03. Research Paper</h3>
+                    <p class="text-gray-300 mb-4">Describes what you contribute to existing knowledge, giving due
+                        recognition to all work that you referred in making new knowledge.</p>
+                    <p class="text-gray-400 mb-4">June 14</p>
+                    <a href="https://drive.google.com/drive/folders/1jAvPqLz72UVWQ637DJn5IzHimLA13sBI?usp=sharing"
+                        class="bg-green-500 text-white px-4 py-2 rounded" target="_blank">Download</a>
+                </div>
+
+                <div
+                    class="bg-gray-800 p-6 rounded-lg shadow-lg text-left transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                    <h3 class="text-lg font-bold text-green-400 mb-2">04. Progress Presentation II</h3>
+                    <p class="text-gray-300 mb-4">Reviews the 90% completion status of the project. Along with a poster
+                        presentation describing the project as a whole.</p>
+                    <p class="text-gray-400 mb-4">September 09</p>
+                    <a href="https://drive.google.com/drive/folders/1tZS8heO_z5mUhx_s9zfa2bjUIqyR6LVx?usp=sharing"
+                        class="bg-green-500 text-white px-4 py-2 rounded" target="_blank">Download</a>
+                </div>
+
+                <div
+                    class="bg-gray-800 p-6 rounded-lg shadow-lg text-left transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                    <h3 class="text-lg font-bold text-green-400 mb-2">05. Website Assessment</h3>
+                    <p class="text-gray-300 mb-4">The Website helps to promote our research project and reveals all
+                        details related to the project.</p>
+                    <p class="text-gray-400 mb-4">October 21</p>
+                    <a href="https://drive.google.com/your-website-assessment-link"
+                        class="bg-green-500 text-white px-4 py-2 rounded" target="_blank">Download</a>
+                </div>
+
+                <!-- Logbook with Single Download Link -->
+                <div
+                    class="bg-gray-800 p-6 rounded-lg shadow-lg text-left transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                    <h3 class="text-lg font-bold text-green-400 mb-2">06. Logbook</h3>
+                    <p class="text-gray-300 mb-4">Status of the project is validated through the Logbook</p>
+                    <p class="text-gray-400 mb-4">November 20</p>
+                    <!-- <p class="text-gray-300 font-semibold mb-2">Documents:</p> -->
+                    <div class="flex">
+                        <a href="https://drive.google.com/logbook-combined-link"
+                            class="bg-green-500 text-white px-4 py-2 rounded" target="_blank">Download</a>
+                    </div>
+                </div>
+
+
+                <div
+                    class="bg-gray-800 p-6 rounded-lg shadow-lg text-left transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                    <h3 class="text-lg font-bold text-green-400 mb-2">07. Final Presentation</h3>
+                    <p class="text-gray-300 mb-4">The final presentation gives a complete overview of the project,
+                        demonstrating its results and findings.</p>
+                    <p class="text-gray-400 mb-4">December 05</p>
+                    <a href="https://drive.google.com/your-final-presentation-link"
+                        class="bg-green-500 text-white px-4 py-2 rounded" target="_blank">Download</a>
+                </div>
+
+                <!-- Poster Milestone Card -->
+                <div
+                    class="bg-gray-800 p-6 rounded-lg shadow-lg text-left transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                    <h3 class="text-lg font-bold text-green-400 mb-2">08. Poster</h3>
+                    <p class="text-gray-300 mb-4">The poster visually summarizes the project for presentations and
+                        conferences.</p>
+                    <p class="text-gray-400 mb-4">November 28</p>
+                    <a href="https://drive.google.com/your-poster-link"
+                        class="bg-green-500 text-white px-4 py-2 rounded" target="_blank">Download</a>
+                </div>
+
+                <div
+                    class="bg-gray-800 p-6 rounded-lg shadow-lg text-left transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                    <h3 class="text-lg font-bold text-green-400 mb-2">09. Final Report</h3>
+                    <p class="text-gray-300 mb-4">The Project Report provides a detailed account of the entire project,
+                        including challenges, methodologies, and results.</p>
+                    <p class="text-gray-400 mb-4">December 02</p>
+                    <a href="https://drive.google.com/your-final-report-link"
+                        class="bg-green-500 text-white px-4 py-2 rounded" target="_blank">Download</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Final Outcome Section with Slider Navigation -->
+    <section id="outcome" class="py-16 bg-blue-100">
+        <div class="container mx-auto px-8">
+            <!-- Section Title -->
+            <h2 class="text-4xl font-bold text-center text-green-600 mb-8">
+                <span class="relative inline-block">
+                    <span class="absolute inset-0 transform -skew-y-3 bg-blue-300 opacity-70 rounded-lg"></span>
+                    <span class="relative text-black">Final Outcome</span>
+                </span>
+            </h2>
+
+            <!-- Slider Wrapper -->
+            <div class="relative overflow-hidden">
+                <!-- Slider Container -->
+                <div id="slider" class="flex space-x-6 transition-transform duration-500">
+
+                    <!-- Slide 1: Therapeutic Progress Tracker -->
+                    <div class="min-w-full bg-gray-800 p-8 rounded-lg shadow-lg flex items-center space-x-8">
+                        <div class="w-1/2 pr-6">
+                            <h3 class="text-3xl font-bold text-green-400 mb-4">Therapeutic Progress Tracker</h3>
+                            <p class="text-gray-300">
+                                This feature enables patients to schedule sessions with doctors. Once both parties
+                                agree, the session is automatically scheduled and starts within the app. During the
+                                session, a transcript is created, extracting tasks for the patient, names of
+                                medications, and the next session date. The extracted tasks are added to a to-do list,
+                                medication details provide helpful insights, and future sessions are scheduled in the
+                                app's calendar.
+                            </p>
+                        </div>
+                        <div class="w-1/2 flex justify-center">
+                            <img src="../asets/scshot1.jpg" alt="Therapeutic Progress Tracker" class="rounded-md"
+                                style="width: 250px; height: auto;">
+                        </div>
+                    </div>
+
+                    <!-- Slide 2: Creative Wellness Hub -->
+                    <div class="min-w-full bg-gray-800 p-8 rounded-lg shadow-lg flex items-center space-x-8">
+                        <div class="w-1/2 pr-6">
+                            <h3 class="text-3xl font-bold text-green-400 mb-4">Creative Wellness Hub</h3>
+                            <p class="text-gray-300">
+                                This platform allows users to share experiences with a supportive community. The app
+                                recommends posts based on similar conditions, enabling users to connect and receive
+                                feedback. Patients can share daily updates with doctors through notes, which the app can
+                                turn into editable posts, attach media, and allow others to comment and share their
+                                perspectives.
+                            </p>
+                        </div>
+                        <div class="w-1/2 flex justify-center">
+                            <img src="../asets/scshot1.jpg" alt="Creative Wellness Hub" class="rounded-md"
+                                style="width: 250px; height: auto;">
+                        </div>
+                    </div>
+
+                    <!-- Slide 3: YALE-BROWN OCD Scale -->
+                    <div class="min-w-full bg-gray-800 p-8 rounded-lg shadow-lg flex items-center space-x-8">
+                        <div class="w-1/2 pr-6">
+                            <h3 class="text-3xl font-bold text-green-400 mb-4">YALE-BROWN OCD Scale</h3>
+                            <p class="text-gray-300">
+                                This feature evaluates users using the Yale-Brown Obsessive Compulsive Scale, offering
+                                stress-free assessments. Results are recorded and shared with doctors for additional
+                                insights. This allows doctors to track the patient's progress in a structured manner,
+                                providing necessary support as needed.
+                            </p>
+                        </div>
+                        <div class="w-1/2 flex justify-center">
+                            <img src="../asets/scshot1.jpg" alt="YALE-BROWN OCD Scale" class="rounded-md"
+                                style="width: 250px; height: auto;">
+                        </div>
+                    </div>
+
+                    <!-- Slide 4: Urges & Fears Management -->
+                    <div class="min-w-full bg-gray-800 p-8 rounded-lg shadow-lg flex items-center space-x-8">
+                        <div class="w-1/2 pr-6">
+                            <h3 class="text-3xl font-bold text-green-400 mb-4">Urges & Fears Management</h3>
+                            <p class="text-gray-300">
+                                Starting with a chat with the AI chatbot, this feature gathers information on the
+                                patient's condition, sending the report to a doctor who recommends actions. For example,
+                                for phobias like excessive handwashing, the app provides gentle reminders, using
+                                location and prior data to help minimize unnecessary symptoms.
+                            </p>
+                        </div>
+                        <div class="w-1/2 flex justify-center">
+                            <img src="../asets/scshot1.jpg" alt="Urges & Fears Management" class="rounded-md"
+                                style="width: 250px; height: auto;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Buttons -->
+                <button id="prev"
+                    class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-green-500 text-white p-2 rounded-full ml-4">
+                    &lt;
+                </button>
+                <button id="next"
+                    class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-green-500 text-white p-2 rounded-full mr-4">
+                    &gt;
+                </button>
+
+                <!-- Dot Indicators -->
+                <div class="flex justify-center mt-4 space-x-2">
+                    <span class="dot w-3 h-3 bg-gray-400 rounded-full"></span>
+                    <span class="dot w-3 h-3 bg-gray-400 rounded-full"></span>
+                    <span class="dot w-3 h-3 bg-gray-400 rounded-full"></span>
+                    <span class="dot w-3 h-3 bg-gray-400 rounded-full"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const slider = document.getElementById('slider');
+        const dots = document.querySelectorAll('.dot');
+        const slides = slider.children;
+        const totalSlides = slides.length;
+        let currentIndex = 0;
+
+        // Update slider position and highlight the active dot
+        function updateSlider() {
+            slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('bg-green-500', index === currentIndex);
+                dot.classList.toggle('bg-gray-400', index !== currentIndex);
+            });
+        }
+
+        // Next button click event
+        document.getElementById('next').addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateSlider();
+        });
+
+        // Prev button click event
+        document.getElementById('prev').addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            updateSlider();
+        });
+
+        // Dot click event
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentIndex = index;
+                updateSlider();
+            });
+        });
+
+        // Initial update
+        updateSlider();
+    </script>
+
+
+
+
+    <!-- Our Team Section -->
+    <section id="team" class="py-16 bg-blue-100">
+        <div class="container mx-auto px-8">
+            <h2 class="text-4xl font-bold text-center text-green-600 mb-12">
+                <span class="relative inline-block">
+                    <span class="absolute inset-0 transform -skew-y-3 bg-blue-300 opacity-70 rounded-lg"></span>
+                    <span class="relative text-black">Our Team</span>
+                </span>
+            </h2>
+
+            <!-- First Row: Supervisors -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                <!-- Team Member 1: Ms. Lokesha Weerasinghe -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-md text-center text-white">
+                    <img src="../asets/Lokesha madam.jpg" alt="Ms. Lokesha Weerasinghe"
+                        class="w-32 h-32 mx-auto mb-4 object-contain">
+                    <h3 class="text-2xl font-bold">Ms. Lokesha Weerasinghe</h3>
+                    <p class="text-green-400">Supervisor</p>
+                    <div class="mt-4">
+                        <a href="https://linkedin.com" class="bg-blue-600 text-white px-4 py-2 rounded">LinkedIn</a>
+                    </div>
+                </div>
+
+                <!-- Team Member 2: Ms. Thamali Dassanayake -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-md text-center text-white">
+                    <img src="../asets/Thamali madam.jpg" alt="Ms. Thamali Dassanayake"
+                        class="w-32 h-32 mx-auto mb-4 object-contain">
+                    <h3 class="text-2xl font-bold">Ms. Thamali Dassanayake</h3>
+                    <p class="text-green-400">Co-Supervisor</p>
+                    <div class="mt-4">
+                        <a href="https://linkedin.com" class="bg-blue-600 text-white px-4 py-2 rounded">LinkedIn</a>
+                    </div>
+                </div>
+
+                <!-- Team Member 3: Mr Kaushal Satheamoorthey -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-md text-center text-white">
+                    <img src="../asets/Kaushal .png" alt="Mr Kaushal Satheamoorthey"
+                        class="w-32 h-32 mx-auto mb-4 object-contain">
+                    <h3 class="text-2xl font-bold">Mr Kaushal Satheamoorthey</h3>
+                    <p class="text-green-400">External Supervisor</p>
+                    <div class="mt-4">
+                        <a href="https://linkedin.com" class="bg-blue-600 text-white px-4 py-2 rounded">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Row: Group Members -->
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <!-- Team Member 4: De Silva M.N.S (Group Leader) -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-md text-center text-white">
+                    <img src="../asets/asda.jpg" alt="De Silva M.N.S" class="w-32 h-32 mx-auto mb-4 object-contain">
+                    <h3 class="text-2xl font-bold">De Silva M.N.S</h3>
+                    <p class="text-green-400">Group Leader</p>
+                    <p class="text-gray-400">ID: IT21032592</p>
+                    <div class="mt-4">
+                        <a href="https://linkedin.com" class="bg-green-600 text-white px-4 py-2 rounded">LinkedIn</a>
+                    </div>
+                </div>
+
+                <!-- Team Member 5: Sewwandi P.K.A.D -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-md text-center text-white">
+                    <img src="../asets/asini.jpg" alt="Sewwandi P.K.A.D" class="w-32 h-32 mx-auto mb-4 object-contain">
+                    <h3 class="text-2xl font-bold">Sewwandi P.K.A.D</h3>
+                    <p class="text-green-400">Group Member</p>
+                    <p class="text-gray-400">ID: IT21040276</p>
+                    <div class="mt-4">
+                        <a href="https://linkedin.com" class="bg-green-600 text-white px-4 py-2 rounded">LinkedIn</a>
+                    </div>
+                </div>
+
+                <!-- Team Member 6: Fernandopulle A.H. -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-md text-center text-white">
+                    <img src="../asets/avishka.png" alt="Fernandopulle A.H."
+                        class="w-32 h-32 mx-auto mb-4 object-contain">
+                    <h3 class="text-2xl font-bold">Fernandopulle A.H.</h3>
+                    <p class="text-green-400">Group Member</p>
+                    <p class="text-gray-400">ID: IT21143168</p>
+                    <div class="mt-4">
+                        <a href="https://linkedin.com" class="bg-green-600 text-white px-4 py-2 rounded">LinkedIn</a>
+                    </div>
+                </div>
+
+                <!-- Team Member 7: Kularathna G.R.R.P -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-md text-center text-white">
+                    <img src="../asets/rajja.jpg" alt="Kularathna G.R.R.P"
+                        class="w-32 h-32 mx-auto mb-4 object-contain">
+                    <h3 class="text-2xl font-bold">Kularathna G.R.R.P</h3>
+                    <p class="text-green-400">Group Member</p>
+                    <p class="text-gray-400">ID: IT21508264</p>
+                    <div class="mt-4">
+                        <a href="https://linkedin.com" class="bg-green-600 text-white px-4 py-2 rounded">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>
